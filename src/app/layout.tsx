@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Fira_Sans } from "next/font/google";
 import "./globals.css";
-
+import Header from "../blocks/Header";
 
 
 const firaSans = Fira_Sans({
@@ -25,6 +25,7 @@ export default function RootLayout({
       <body
         className={`${firaSans.className} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
