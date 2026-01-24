@@ -1,7 +1,9 @@
+'use client';
+
+
 export default function TextHero() {
     return (
-    <div className="bg-blue-200">
-      <div className="px-2 py-20 sm:py-40 sm:px-6 md:px-12 lg:px-20 xl:px-100 xl:py-48">
+      <div className="bg-indigo-200/25 px-2 py-20 sm:py-40 sm:px-6 md:px-12 lg:px-20 xl:px-100 xl:py-48">
         <h1 className="text-3xl sm:text-6xl md:text-7xl xl:text-8xl max-w-7xl">
           Information Systems, Design & Development
         </h1>
@@ -16,6 +18,5 @@ export default function TextHero() {
           </span>
         </div>
       </div>
-    </div>
     );
 }
