@@ -8,7 +8,7 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className=" sm:flex place-content-between bg-white mt-16 py-2">
+        <header className="sm:flex place-content-between bg-white mt-16 py-2">
             <div className="content-center max-w-3xs m-auto sm:ml-4">
                 <Link href="/">
                     <Image
