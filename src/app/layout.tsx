@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "../blocks/Header";
-
+import background from "../assets/system-grid.svg"
 
 const firaSans = Fira_Sans({
   weight: ["300", "400", "600"],
@@ -24,6 +24,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${firaSans.className} antialiased`}
+        style={{
+          backgroundImage: `url(${background.src})`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '470px 470px',
+          backgroundPosition: 'top',
+        }}
       >
         <Header />
         {children}
