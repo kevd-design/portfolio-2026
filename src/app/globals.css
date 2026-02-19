@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: oklch(96.2% 0.018 272.314);
+  --background-image: url('../assets/system-grid-light.svg');
   --foreground: #171717;
 }
 
@@ -20,6 +20,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --background-image: url('../assets/system-grid-dark.svg');
   }
   .imgLight {
     display: none;
@@ -27,6 +28,13 @@
   .imgDark {
     display: unset;
   }
+}
+
+.background-grid {
+  background-image: var(--background-image);
+  background-repeat: repeat;
+  background-size: 470px 470px;
+  background-position: top;
 }
 
 body {
